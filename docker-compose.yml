@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+ wdio:
+  build: .
+  volumes: 
+   - $PWD/wdio.conf.js:/webdriverio/wdio.conf.js
+   - $PWD/tests:/webdriverio/tests
+   - $PWD/node_modules:/webdriverio/node_modules
+   - $PWD/errorShots:/webdriverio/errorShots
+  depends_on:
+   - selenium
+ selenium:
+  image: selenium/standalone-chrome
+  ports:
+   - 4444:4444
