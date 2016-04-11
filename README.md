@@ -6,7 +6,7 @@ Docker image to run WebDriverIO tests
 
 ## Usage
 
-Run our example test with the included run script:
+Run our example test with docker-compose:
 
 ```bash
 #Get example assets
@@ -16,6 +16,6 @@ cd docker-wdio
 #Install assert library
 npm install
 
-#Run the example in ./tests/google/main.js
+#Run the tests in ./tests/google/main.js
 docker-compose run wdio
 ```
