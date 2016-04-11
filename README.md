@@ -2,7 +2,7 @@
 
 ## Description
 
-Docker image to easily run WebDriverIO tests
+Docker image to run WebDriverIO tests
 
 ## Usage
 
@@ -17,5 +17,5 @@ cd docker-wdio
 npm install
 
 #Run the example in ./tests/google/main.js
-docker-compose up
+docker-compose run wdio
 ```
