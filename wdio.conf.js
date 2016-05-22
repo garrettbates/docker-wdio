@@ -90,16 +90,15 @@ exports.config = {
     // WebdriverCSS: https://github.com/webdriverio/webdrivercss
     // WebdriverRTC: https://github.com/webdriverio/webdriverrtc
     // Browserevent: https://github.com/webdriverio/browserevent
-    // plugins: {
-    //     webdrivercss: {
-    //         screenshotRoot: 'my-shots',
-    //         failedComparisonsRoot: 'diffs',
-    //         misMatchTolerance: 0.05,
-    //         screenWidth: [320,480,640,1024]
-    //     },
-    //     webdriverrtc: {},
+     plugins: {
+         webdrivercss: {
+             screenshotRoot: './errorShots',
+             failedComparisonsRoot: 'errorShots/diffs',
+             misMatchTolerance: 0.05,
+         }
+    //    , webdriverrtc: {},
     //     browserevent: {}
-    // },
+     },
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
